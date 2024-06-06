@@ -1,0 +1,174 @@
+/* Fonte e cores principais */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo para o header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 0;
+    color: #035C52;
+    z-index: 10; /* Certifica-se de que o header está acima da imagem de fundo */
+}
+
+.header nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    margin-right: 25px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #035C52;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #F9EF93;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para o fundo e conteúdo central */
+.background-index {
+    background: url('index_bg.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.background-noticias {
+    background: url('noticias_bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.background-eventos {
+    background: url('eventos_bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.35); /* Fundo claro semitransparente */
+}
+
+.content {
+    z-index: 1;
+    text-align: left;
+    position: relative;
+    margin-left: 25px;
+    color: #035C52;
+    margin-top: 10px;
+}
+
+.content-right {
+    position: relative; /* Para que o z-index funcione */
+    z-index: 1; /* Fica acima do overlay */
+    width: 70vh;
+    text-align: left;
+    margin-left: 99vh;
+    color: #035C52;
+    margin-right: -10vh;
+    opacity: 1;
+}
+
+.p-content {
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 5px;
+    font-weight: bolder;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    opacity: 1;
+}
+
+h2 {
+    margin-bottom: -10px;
+}
+
+p {
+    font-size: 1.2em;
+    padding: 5px;
+    font-weight: normal;
+    opacity: 1;
+}
+
+.btn {
+    background-color: #035C52;
+    color: #FFFFFF;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    opacity: 1.0;
+}
+
+.btn:hover {
+    background-color: #035C52;
+    color: #FFFFFF;
+}
+
+.img-bloco {
+    width: fit-content;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.bloco {
+    width: fit-content;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.blocos {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
