@@ -83,6 +83,17 @@ body, html {
     color: #fff;
 }
 
+.background-sobre {
+    background: url('sobre_bg.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -171,4 +182,15 @@ p {
     display: flex;
     margin-top: 20px;
     width: 100%;
+}
+
+form {
+    text-align: left;
+    justify-content: center;
+}
+
+input {
+    border: #035C52 2px solid;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
